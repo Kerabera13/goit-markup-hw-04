@@ -142,7 +142,7 @@ img {
   fill: currentColor;
 }
 
-.contact-item {
+.header-connect {
   display: flex;
   align-items: center;
 }
