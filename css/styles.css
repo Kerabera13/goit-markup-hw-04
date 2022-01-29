@@ -139,11 +139,32 @@ img {
 .contact-link:hover,
 .contact-link:focus {
   color: var(--accent-color);
+  fill: currentColor;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 10px;
 }
 
 /*--------- hero-------- */
 .hero {
   background-color: #2f303a;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
@@ -229,7 +250,8 @@ img {
   margin-bottom: 50px;
 }
 .works-title,
-.team-title {
+.team-title,
+.regular-customers-tittle {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -253,7 +275,7 @@ img {
   margin-bottom: -30px;
 }
 .team-item {
-  flex-basis: calc(100%-60px)/ 4);
+  flex-basis: calc((100%-60px) / 4);
   margin-left: 30px;
   margin-bottom: 30px;
 }
@@ -287,6 +309,39 @@ img {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+/*------------regular-customer------*/
+.regular-customers {
+  padding-bottom: 94px;
+  margin-top: 94px;
+}
+.regular-customers-tittle {
+  margin-bottom: 50px;
+}
+
+.regular-customers-link {
+  border: 1px solid rgba(175, 177, 184, 1);
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  fill: #afb1b8;
+  width: 170px;
+  height: 92px;
+}
+.regular-customers-link:hover,
+.regular-customers-link:focus {
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
+.regular-customers-item + .regular-customers-item {
+  margin-left: 30px;
+}
+
+.regular-customers-list {
+  display: flex;
+  justify-content: center;
+}
 
 /*------- footer-----*/
 .footer {
@@ -308,7 +363,7 @@ address {
   color: #ffffff;
 }
 
-.footer-item:not(:last-child){
+.footer-item:not(:last-child) {
   display: block;
   margin-bottom: 9px;
 }
@@ -402,4 +457,9 @@ address {
   padding-right: 24px;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+.gallery-link:hover {
+  display: block;
+  box-shadow: 1px 4px 6px 0px #00000029, 0px 4px 4px 0px #0000000f,
+    0px 1px 1px 0px #0000001f;
 }
