@@ -311,6 +311,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  margin-bottom: 16px;
 }
 .team-border {
   background: #ffffff;
@@ -320,6 +321,35 @@ img {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+.team-social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.team-social-link {
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #afb1b8;
+}
+.advantages-icon {
+  fill: currentColor;
+}
+
+.team-social-link:hover,
+.team-social-link:focus {
+  background-color: var(--accent-color);
+  color: var(--additional-color);
+}
+
+.team-social-item + .team-social-item {
+  margin-left: 10px;
+}
+
 /*------------regular-customer------*/
 .regular-customers {
   padding-bottom: 94px;
@@ -371,7 +401,7 @@ address {
 }
 
 .adress-color {
-  color: #ffffff;
+  color: var(--additional-color);
 }
 
 .footer-item:not(:last-child) {
@@ -390,6 +420,53 @@ address {
 .footer-contact-link:hover,
 .footer-contact-link:focus {
   color: var(--accent-color);
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+.footer-social + .footer-social {
+  margin-left: 70px;
+}
+.footer-social-text {
+  display: block;
+  margin-bottom: 20px;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--additional-color);
+}
+
+.footer-social-list {
+  display: flex;
+  justify-content: center;
+}
+.footer-social-item + .footer-social-item {
+  margin-left: 10px;
+}
+
+.footer-social-link {
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--additional-color);
+}
+.footer-icon {
+  fill: currentColor;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--accent-color);
+  color: var(--additional-color);
 }
 
 /*------ portfolio-----*/
@@ -424,8 +501,8 @@ address {
 
 .portfolio-filter-button:hover,
 .portfolio-filter-button:focus {
-  background-color: #2196f3;
-  color: #ffffff;
+  background-color: var(--accent-color);
+  color: var(--additional-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
