@@ -129,12 +129,16 @@ img {
 }
 
 .contact-link {
+  display: flex;
+  align-items: center;
+
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--contact-color);
+  fill: var(--contact-color);
 }
 .contact-link:hover,
 .contact-link:focus {
@@ -179,6 +183,11 @@ img {
   color: var(--additional-color);
 }
 .hero-button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 32px;
+  padding-left: 32px;
+
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -200,11 +209,14 @@ img {
   background-color: #188ce8;
 }
 
-/*-------- Advantages--------*/
-.advantages {
+/*------- section------*/
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
+/*-------- Advantages--------*/
+
 .advantages-list {
   display: flex;
 }
@@ -247,7 +259,7 @@ img {
 
 /*-------works------*/
 .works {
-  padding-bottom: 94px;
+  padding-top: 0px;
 }
 .works-list {
   display: flex;
@@ -274,12 +286,11 @@ img {
 /*-------team------*/
 .team {
   background-color: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 .team-title {
   margin-bottom: 50px;
 }
+
 .team-list {
   display: flex;
   margin-left: -30px;
@@ -351,10 +362,7 @@ img {
 }
 
 /*------------regular-customer------*/
-.regular-customers {
-  padding-bottom: 94px;
-  margin-top: 94px;
-}
+
 .regular-customers-tittle {
   margin-bottom: 50px;
 }
@@ -472,10 +480,6 @@ address {
 /*------ portfolio-----*/
 /*-------filter--------*/
 
-.portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 .portfolio-filter {
   margin-bottom: 50px;
 }
@@ -485,6 +489,11 @@ address {
 }
 
 .portfolio-filter-button {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 22px;
+  padding-left: 22px;
+
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -546,8 +555,14 @@ address {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-.gallery-link:hover {
+.gallery-link {
   display: block;
-  box-shadow: 1px 4px 6px 0px #00000029, 0px 4px 4px 0px #0000000f,
-    0px 1px 1px 0px #0000001f;
+}
+
+.gallery-link:hover,
+.gallery-link:focus {
+  background: #ffffff;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
